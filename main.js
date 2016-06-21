@@ -31,7 +31,7 @@ define([
      * Called after extension was loaded
      *
      */
-    var load_extension = function() {
+    var code_cell_status = function() {
 
         IPython.CodeCell.prototype.execute = function (stop_on_error) {
             if (!this.kernel || !this.kernel.is_connected()) {
@@ -83,9 +83,5 @@ define([
         };
     };
 
-    var visualize_tools = {
-        load_ipython_extension : load_extension
-    };
-
-    return visualize_tools;
+    return { load_ipython_extension : code_cell_status };
 });
