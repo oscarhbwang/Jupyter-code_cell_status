@@ -1,6 +1,7 @@
 # Introduction
 
-Jupyter notebook extension - visualise each code cell's executing status with colors
+According to the code cell status "output_area.prompt_overlay" is colored.  
+Light Cyan, Linen and Pink represent "running", "finished successfully" and "finished with errors" respectively.
 
 # Setup
 
