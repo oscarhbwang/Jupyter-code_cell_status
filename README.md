@@ -62,7 +62,7 @@ Edit the .jupyter/jupyter_nbconvert.json to look like this:
   ```
 # Usage
 
-1. 通常と同じ手順でnotebookを使用してください。セルを実行すると実行状態が色によって可視化されます。
+![demo](https://raw.githubusercontent.com/NII-cloud-operation/Jupyter-code_cell_status/master/demo.gif)
 
 # License
 
