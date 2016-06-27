@@ -12,7 +12,7 @@ Light Cyan, Linen and Pink represent "running", "finished successfully" and "fin
 
 ## 2. Configuration
 
-make (or edit) youre `~/.jupyter/nbconfig/notebook.json` file
+1. make (or edit) youre `~/.jupyter/nbconfig/notebook.json` file
 
 ```
 {
@@ -22,6 +22,44 @@ make (or edit) youre `~/.jupyter/nbconfig/notebook.json` file
 }
 ```
 
+1. Edit the .jupyter/jupyter_notebook.json to look like this
+
+  ```
+  {
+    "Exporter": {
+      "preprocessors": [
+        "pre_codefolding.CodeFoldingPreprocessor",
+        "pre_pymarkdown.PyMarkdownPreprocessor"
+      ]
+    },
+    "NbConvertApp": {
+      "postprocessor_class": "post_embedhtml.EmbedPostProcessor"
+    },
+    "NotebookApp": {
+      "server_extensions": [
+        "nbextensions"
+      ]
+    },
+    "version": 1
+  }
+  ```
+
+Edit the .jupyter/jupyter_nbconvert.json to look like this:
+
+  ```
+  {
+    "Exporter": {
+      "preprocessors": [
+        "pre_codefolding.CodeFoldingPreprocessor",
+        "pre_pymarkdown.PyMarkdownPreprocessor"
+      ]
+    },
+    "NbConvertApp": {
+      "postprocessor_class": "post_embedhtml.EmbedPostProcessor"
+    },
+    "version": 1
+  }
+  ```
 # Usage
 
 1. 通常と同じ手順でnotebookを使用してください。セルを実行すると実行状態が色によって可視化されます。
