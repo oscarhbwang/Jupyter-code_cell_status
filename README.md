@@ -1,15 +1,15 @@
 # Introduction
 
-これは、セルのステータスを表示する、Jupyter Notebook Extensionです。
+Jupyter notebook extension - visualise each code cell's executing status with colors
 
 # Setup
 
-## 1. manual instration
+## 1. Installation
 
 1. make the `nbextensions` folder to `~/.ipython/`
 2. copy the `code_cell_status` folder to `~/.ipython/nbextensions/`
 
-## 2. configuration
+## 2. Configuration
 
 make (or edit) youre `~/.jupyter/nbconfig/notebook.json` file
 
@@ -21,7 +21,7 @@ make (or edit) youre `~/.jupyter/nbconfig/notebook.json` file
 }
 ```
 
-## 3. 使用する
+# Usage
 
 1. 通常と同じ手順でnotebookを使用してください。セルを実行すると実行状態が色によって可視化されます。
 
